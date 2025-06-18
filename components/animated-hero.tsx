@@ -42,7 +42,7 @@ export default function AnimatedHero() {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center text-center text-white"
+      className="relative h-[80vh] flex items-center justify-center text-center text-white bg-fixed bg-cover bg-center"
       style={{
         backgroundImage: "url('/images/hero-bg.jpg')",
         backgroundSize: "cover",
@@ -59,7 +59,7 @@ export default function AnimatedHero() {
           {t("hero.subtitle")}
         </h2>
         <div ref={buttonRef}>
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-3">
+          <Button size="lg" className="bg-primary hover:bg-hove_primary text-lg px-8 py-3">
             {t("hero.cta")}
           </Button>
         </div>

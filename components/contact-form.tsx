@@ -113,7 +113,7 @@ export default function ContactForm() {
 
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-3 md:px-14">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Team Image */}
           <div ref={imageRef} className="order-2 lg:order-1">
@@ -132,7 +132,7 @@ export default function ContactForm() {
           <div ref={formRef} className="order-1 lg:order-2">
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center gap-3 mb-6">
-                <Mail className="h-6 w-6 text-blue-600" />
+                <Mail className="h-6 w-6 text-primary" />
                 <h2 className="text-2xl font-bold text-gray-900">{t("contact.form.title")}</h2>
               </div>
 
@@ -188,14 +188,14 @@ export default function ContactForm() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg font-medium"
+                  className="w-full bg-primary hover:bg-hover_primary text-white py-3 text-lg font-medium"
                 >
                   {isSubmitting ? t("contact.form.sending") : t("contact.form.send")}
                 </Button>
 
                 {/* Status Messages */}
                 {submitStatus === "success" && (
-                  <div className="flex items-center gap-2 text-green-600 bg-green-50 p-3 rounded-lg">
+                  <div className="flex items-center gap-2 text-primary bg-green-50 p-3 rounded-lg">
                     <CheckCircle className="h-5 w-5" />
                     <span>{t("contact.form.success")}</span>
                   </div>

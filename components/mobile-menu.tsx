@@ -90,10 +90,10 @@ export default function MobileMenu() {
               {/* Menu Header */}
               <div className="flex items-center justify-between p-6 border-b">
                 <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-sm">D</span>
                   </div>
-                  <span className="text-lg font-bold text-gray-900">DOLINVESTE</span>
+                  <span className="text-lg font-bold text-gray-900">OLINVESTE</span>
                 </div>
                 <Button variant="ghost" size="sm" onClick={closeMenu} aria-label="Close menu">
                   <X className="h-6 w-6" />
@@ -105,8 +105,8 @@ export default function MobileMenu() {
                 <ul className="space-y-6">
                   <li ref={(el:any) => (itemsRef.current[0] = el)}>
                     <Link
-                      href="#"
-                      className="block text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                      href="/"
+                      className="block text-lg font-medium text-gray-700 hover:text-primary transition-colors"
                       onClick={closeMenu}
                     >
                       {t("nav.home")}
@@ -114,8 +114,8 @@ export default function MobileMenu() {
                   </li>
                   <li ref={(el:any) => (itemsRef.current[1] = el)}>
                     <Link
-                      href="#"
-                      className="block text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                      href="/about"
+                      className="block text-lg font-medium text-gray-700 hover:text-primary transition-colors"
                       onClick={closeMenu}
                     >
                       {t("nav.about")}
@@ -124,7 +124,7 @@ export default function MobileMenu() {
                   <li ref={(el:any) => (itemsRef.current[2] = el)}>
                     <Link
                       href="/contact"
-                      className="block text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                      className="block text-lg font-medium text-gray-700 hover:text-primary transition-colors"
                       onClick={closeMenu}
                     >
                       {t("nav.contact")}
@@ -142,12 +142,12 @@ export default function MobileMenu() {
                         onClick={() => handleLanguageChange(lang.code)}
                         disabled={isLoading}
                         className={`flex items-center space-x-3 w-full p-2 rounded-lg transition-colors disabled:opacity-50 ${
-                          currentLanguage === lang.code ? "bg-blue-50 text-blue-600" : "text-gray-700 hover:bg-gray-50"
+                          currentLanguage === lang.code ? "bg-blue-50 text-primary" : "text-gray-700 hover:bg-gray-50"
                         }`}
                       >
                         <span className="text-xl">{lang.flag}</span>
                         <span className="font-medium">{lang.name}</span>
-                        {currentLanguage === lang.code && <div className="ml-auto w-2 h-2 bg-blue-600 rounded-full" />}
+                        {currentLanguage === lang.code && <div className="ml-auto w-2 h-2 bg-primary rounded-full" />}
                       </button>
                     ))}
                   </div>

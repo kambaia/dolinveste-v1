@@ -16,14 +16,14 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50 ">
       <div className="mx-auto max-w-[1440px] px-3 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-1">
-          <span className="text-2xl font-bold text-gray-900">
+          <Link href={'/'}  className="text-2xl font-bold text-gray-900">
             <Image
               src="/images/logo_dol.png"
               alt="Logo da empresa"
               width={130}
               height={80}
             />
-          </span>
+          </Link>
         </div>
         <nav className="hidden md:flex items-center space-x-8">
           <Link

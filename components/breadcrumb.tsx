@@ -25,10 +25,10 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
   return (
     <nav ref={breadcrumbRef} className="flex items-center space-x-2 text-white text-sm">
       {items.map((item, index) => (
-        <div key={index} className="flex items-center">
+        <div key={index} className="flex items-center py-4">
           {index > 0 && <ChevronRight className="h-4 w-4 mx-2" />}
           {item.href ? (
-            <Link href={item.href} className="hover:text-blue-200 transition-colors">
+            <Link href={item.href} className="hover:text-blue-200 transition-color text-xl">
               {item.label}
             </Link>
           ) : (

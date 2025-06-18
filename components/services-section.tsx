@@ -56,31 +56,31 @@ export default function ServicesSection() {
 
   const services = [
     {
-      icon: <Lock className="h-16 w-16 text-blue-600 mx-auto mb-6" />,
+      icon: <Lock className="h-16 w-16 text-primary mx-auto mb-6" />,
       title: t("services.investment.title"),
       description: t("services.investment.description"),
     },
     {
-      icon: <Shield className="h-16 w-16 text-blue-600 mx-auto mb-6" />,
+      icon: <Shield className="h-16 w-16 text-primary mx-auto mb-6" />,
       title: t("services.security.title"),
       description: t("services.security.description"),
     },
     {
-      icon: <Server className="h-16 w-16 text-blue-600 mx-auto mb-6" />,
+      icon: <Server className="h-16 w-16 text-primary mx-auto mb-6" />,
       title: t("services.infrastructure.title"),
       description: t("services.infrastructure.description"),
     },
   ]
 
   return (
-    <section ref={sectionRef} className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section ref={sectionRef} className="bg-white shadow-sm">
+      <div className="mx-auto max-w-[1440px] px-3 py-4 flex flex-col items-center justify-between">
         <div className="text-center mb-4">
           <p className="text-gray-600 text-sm uppercase tracking-wide mb-2">{t("services.subtitle")}</p>
           <h2 ref={titleRef} className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
             {t("services.title")}
           </h2>
-          <div className="w-16 h-1 bg-blue-600 mx-auto mb-8"></div>
+          <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-16">{t("services.description")}</p>
         </div>
 

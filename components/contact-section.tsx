@@ -36,11 +36,11 @@ export default function ContactSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20 bg-gray-100">
-      <div ref={contentRef} className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">{t("contact.title")}</h2>
-        <div className="w-16 h-1 bg-[#2D2A8C] mx-auto mb-8"></div>
-        <Button size="lg" className="bg-[#2D2A8C] hover:bg-blue-700 text-lg px-8 py-3">
+    <section ref={sectionRef} className="py-20 bg-gray-100 ">
+      <div ref={contentRef} className="container mx-auto px-4 text-center flex justify-center flex-col items-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 max-w-[1000px]">{t("contact.title")}</h2>
+        <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
+        <Button size="lg" className="bg-primary hover:bg-hove_primary text-lg px-8 py-3 text-white">
           {t("contact.cta")}
         </Button>
       </div>

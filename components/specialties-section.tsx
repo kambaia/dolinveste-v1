@@ -49,15 +49,15 @@ export default function SpecialtiesSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section ref={sectionRef} className="bg-white shadow-sm">
+      <div className="mx-auto max-w-[1440px] px-3 py-4 flex flex-col items-center justify-between">
+        <div className="grid lg:grid-cols-2 gap-28 items-center">
           {/* Left Side - Primary Specialty */}
           <div ref={leftRef} className="space-y-6">
             <div>
-              <p className="text-blue-600 text-sm uppercase tracking-wide mb-2">{t("specialties.primary.label")}</p>
+              <p className="text-primary text-sm uppercase tracking-wide mb-2">{t("specialties.primary.label")}</p>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">{t("specialties.primary.title")}</h3>
-              <div className="w-16 h-1 bg-blue-600 mb-6"></div>
+              <div className="w-16 m-auto md:m-0 h-1 bg-primary mb-6"></div>
               <p className="text-gray-600 leading-relaxed">{t("specialties.primary.description")}</p>
             </div>
             <div className="mt-8">
@@ -74,10 +74,10 @@ export default function SpecialtiesSection() {
             <div className="mb-8">
               <img src="/images/team-work.jpg" alt="Team Work" className="w-full rounded-lg shadow-lg" />
             </div>
-            <div>
-              <p className="text-blue-600 text-sm uppercase tracking-wide mb-2">{t("specialties.secondary.label")}</p>
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">{t("specialties.secondary.title")}</h3>
-              <div className="w-16 h-1 bg-blue-600 mb-6"></div>
+            <div className="">
+              <p className="text-primary text-sm uppercase tracking-wide mb-2">{t("specialties.secondary.label")}</p>
+              <h3 className="text-3xl text-center md:text-left font-bold text-gray-900 mb-4">{t("specialties.secondary.title")}</h3>
+              <div className="w-16 m-auto md:m-0 h-1 bg-primary mb-6"></div>
               <p className="text-gray-600 leading-relaxed">{t("specialties.secondary.description")}</p>
             </div>
           </div>

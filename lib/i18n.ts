@@ -110,9 +110,9 @@ const resources = {
         title: "Estamos prontos para ter uma conversa introdutória consigo",
         cta: "Entre em contacto",
         form: {
-          title: "Send us a Message",
-          pageTitle: "CONTACT",
-          send: "Send",
+          title: "Envie-nos uma mensagem",
+          pageTitle: "CONTACTO",
+          send: "Enviar",
           fullName: "Ex. Manuel Pacavira",
           email: "ex. manuelpacavira@gmail.com",
           subject: "Escreva aqui o que desejas",

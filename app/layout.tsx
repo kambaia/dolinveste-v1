@@ -11,7 +11,12 @@ export const metadata: Metadata = {
   title: "DolInveste - Gestão de Investimentos | Investment Management",
   description:
     "Gerenciamento de investimentos é nosso core business. Tecnologia e inovação para seus investimentos em dólar.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: '/favicon/favincon_dol.png',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({
@@ -20,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-   <html lang="pt-PT">
+    <html lang="pt-PT">
       <body>
-         <Providers>{children}</Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

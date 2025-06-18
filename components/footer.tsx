@@ -41,12 +41,12 @@ export default function Footer() {
             <h3 className="font-semibold mb-4 text-gray-900">{t("contact.quickLinks")}</h3>
             <ul className="space-y-2 text-gray-600">
               <li>
-                <Link href="#" className="hover:text-blue-600">
+                <Link href="/about" className="hover:text-blue-600">
                   {t("contact.about")}
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-blue-600">
+                <Link href="/contact" className="hover:text-blue-600">
                   {t("contact.contacts")}
                 </Link>
               </li>
@@ -58,12 +58,12 @@ export default function Footer() {
             <h3 className="font-semibold mb-4 text-gray-900">{t("contact.services")}</h3>
             <ul className="space-y-2 text-gray-600">
               <li>
-                <Link href="#" className="hover:text-blue-600">
+                <Link href="/about" className="hover:text-blue-600">
                   {t("contact.organization")}
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-blue-600">
+                <Link href="/about" className="hover:text-blue-600">
                   {t("contact.management")}
                 </Link>
               </li>

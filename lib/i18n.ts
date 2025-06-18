@@ -5,7 +5,7 @@ const resources = {
   pt: {
     translation: {
       nav: {
-        home: "Home",
+        home: "HOME",
         about: "SOBRE NÓS",
         contact: "CONTACTOS",
         login: "Entrar",

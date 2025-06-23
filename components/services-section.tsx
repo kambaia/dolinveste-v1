@@ -73,11 +73,11 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section ref={sectionRef} className="bg-white shadow-sm">
+    <section ref={sectionRef} className="bg-white shadow-sm py-20">
       <div className="mx-auto max-w-[1440px] px-3 py-4 flex flex-col items-center justify-between">
         <div className="text-center mb-4">
           <p className="text-gray-600 text-sm uppercase tracking-wide mb-2">{t("services.subtitle")}</p>
-          <h2 ref={titleRef} className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+          <h2 ref={titleRef} className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 uppercase">
             {t("services.title")}
           </h2>
           <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>

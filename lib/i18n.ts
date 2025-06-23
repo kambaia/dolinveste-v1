@@ -21,10 +21,10 @@ const resources = {
         subtitle: "Oferecemos as melhores ferramentas e oportunidades para seus investimentos em dólar",
       },
       services: {
-        title: "O SUCESSO DOS NOSSOS CLIENTES, SÃO O NOSSO MAIOR IMPULSO?",
+        title: "É o sucesso dos nossos clientes que mais nos impulsiona?",
         subtitle: "AS SUAS NECESSIDADES SÃO A NOSSA MAIOR PRIORIDADE",
         description:
-          "Independentemente da complexidade e tamanho do projeto, a DolInveste se empenha no desenvolvimento sustentável para nós e os nossos clientes.",
+          "Independentemente da complexidade e tamanho do projeto, a Dolinveste se empenha no desenvolvimento sustentável para nós e os nossos clientes.",
         investment: {
           title: "GESTÃO DE INVESTIMENTOS E CARTEIRAS",
           description: "Fundos de investimento, Ações americanas, REITs",
@@ -43,17 +43,17 @@ const resources = {
         title: "A NOSSA OFERTA PARA VOCÊ",
         subtitle: "Apoio ao Cliente em Vários Domínios",
         description:
-          "É o sucesso dos nossos clientes que mais nos impulsiona?",
+          "Desde projectos empresariais a serviços de assessoria e consultoria, estamos prontos para ajudá-lo a alcançar os objectivos da sua empresa. Um bom começo é o primeiro passo para um futuro promissor.",
       },
       specialties: {
         primary: {
           label: "NOSSA ESPECIALIDADE PRIMARIA",
           title: "Conhecimento Funcional",
           description:
-            "Desde projectos empresariais a serviços de assessoria e consultoria, estamos prontos para ajudá-lo a alcançar os objectivos da sua empresa. Um bom começo é o primeiro passo para um futuro promissor.",
+            "Com uma vasta experiência na área de gestão de projectos, a Dolinveste estabeleceu elevados padrões de conformidade e qualidade, totalmente alinhados com a legislação aplicável, bem como com os requisitos e expectativas dos seus clientes. Como resultado, garantimos a entrega de soluções eficazes e resultados mensuráveis.",
         },
         secondary: {
-          label: "NOSSA ESPECIALIDADE SECUNDÁRIA ",
+          label: "NOSSA ESPECIALIDADE SECUNDÁRIA",
           title: "Código de Conduta",
           description:
             "Privacidade, confidencialidade e confiança são pilares fundamentais da nossa ética profissional. Esta cultura constitui uma vantagem estratégica para quem escolhe a Dolinveste. Cada etapa do processo é personalizada através da aplicação de soluções integradas e inovadoras, com o objectivo de concretizar as missões estratégicas das organizações que servimos, recorrendo a talentos dinâmicos e diversificados.",
@@ -92,7 +92,7 @@ const resources = {
         },
         whoWeAre: {
           subtitle: "QUEM SOMOS",
-          title: "SOMOS A DOLINVESTE ESTAMOS PRONTOS PARA SERVIR",
+          title: "SOMOS A DOLINVESTE - ESTAMOS PRONTOS PARA SERVIR",
           description:
             "A Dolinveste LDA é uma empresa orientada para a gestão de projectos, impulsionada pela inovação e comprometida com a missão dos seus clientes. Atuamos no desenvolvimento e implementação de soluções nas áreas de Tecnologias de Informação, Telecomunicações, Construção Civil e Gestão Imobiliária.",
           description1:
@@ -107,7 +107,7 @@ const resources = {
       },
       /* traduções do sobre */
       contact: {
-        title: "Estamos prontos para ter uma conversa introdutória consigo",
+        title: "Estamos disponíveis para agendar uma conversa introdutória consigo",
         cta: "Entre em contacto",
         form: {
           title: "Envie-nos uma mensagem",
@@ -159,7 +159,7 @@ const resources = {
         subtitle: "Is it our clients' success that drives us the most?",
       },
       services: {
-        title: "ARE THE SUCCESS OF OUR CUSTOMERS OUR BIGGEST IMPULSE??",
+        title: "ARE THE SUCCESS OF OUR CUSTOMERS OUR BIGGEST IMPULSE?",
         subtitle: "YOUR NEEDS ARE OUR HIGHEST PRIORITY",
         description:
           "Regardless of the complexity and size of the project, Dolinvest strives to sustainable development for us and our customers.",
@@ -232,7 +232,9 @@ const resources = {
           subtitle: "WHO WE ARE",
           title: "WE ARE DOLINVESTE — READY TO SERVE",
           description:
-            "Dolinveste LDA is a project-oriented company, driven by innovation and committed to delivering on the mission of its clients. We operate in the development and implementation of solutions in the fields of Information Technology, Telecommunications, Civil Construction, and Real Estate Management. We are also providers of complex security systems and services, offering technological solutions tailored to the needs of public institutions, private companies, and industrial facilities."
+            "Dolinveste LDA is a project-oriented company, driven by innovation and committed to delivering on the mission of its clients. We operate in the development and implementation of solutions in the fields of Information Technology, Telecommunications, Civil Construction, and Real Estate Management. We are also providers of complex security systems and services, offering technological solutions tailored to the needs of public institutions, private companies, and industrial facilities.",
+          description1:
+            "We are also providers of complex security systems and services, offering technological solutions tailored to the needs of public institutions, private companies, and industrial facilities.",
         },
         inspiration: {
           subtitle: "INSPIRATION",

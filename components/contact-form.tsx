@@ -191,21 +191,21 @@ export default function ContactForm() {
                   disabled={isSubmitting}
                   className="w-full bg-primary hover:bg-hover_primary text-white py-3 text-lg font-medium"
                 >
-                  {isSubmitting ? t("contact.form.sending") : t("contact.form.send")}
+                  {isSubmitting ? t("Sending") : t("contact.form.send")}
                 </Button>
 
                 {/* Status Messages */}
                 {submitStatus === "success" && (
                   <div className="flex items-center gap-2 text-primary bg-green-50 p-3 rounded-lg">
                     <CheckCircle className="h-5 w-5" />
-                    <span>{t("contact.form.success")}</span>
+                    <span>{t("Success")}</span>
                   </div>
                 )}
 
                 {submitStatus === "error" && (
                   <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg">
                     <AlertCircle className="h-5 w-5" />
-                    <span>{t("contact.form.error")}</span>
+                    <span>{t("Error")}</span>
                   </div>
                 )}
               </form>

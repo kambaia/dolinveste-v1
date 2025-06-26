@@ -16,16 +16,10 @@ export async function POST(req: Request) {
         })
 
         await transporter.sendMail({
-            from: `"${fullName}" <${email}>`,
+            from: email,
             to: process.env.EMAIL_TO,
             subject: subject,
             text: message,
-            html: `
-        <p><strong>Nome:</strong> ${fullName}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Assunto:</strong> ${subject}</p>
-        <p><strong>Mensagem:</strong><br/>${message}</p>
-      `,
         });
 
         return NextResponse.json({ success: true });

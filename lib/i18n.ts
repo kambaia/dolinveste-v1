@@ -115,7 +115,7 @@ const resources = {
           send: "Enviar",
           fullName: "Ex. Manuel Pacavira",
           email: "ex. manuelpacavira@gmail.com",
-          subject: "Escreva aqui o que desejas",
+          subject: "Escreva aqui o assunto",
           message: "Escreva aqui a sua mensaem para nós"
         },
         breadcrumb: {
@@ -126,7 +126,7 @@ const resources = {
           description: "Gerenciamento De Investimentos É Nosso Core Business",
           schedule: "Seg-Sexta: 8h00 – 17h48",
           weekend: "Fim de semana: Fechado",
-          email: "office@dolinvest.co.ao",
+          email: "office@dolinveste.co.ao",
           phone: "+244 914 052 955 / +244 949 500 505",
           social: "Encontre-nos nas seguintes sociais:",
         },
@@ -264,7 +264,7 @@ const resources = {
           description: "Investment Management Is Our Core Business",
           schedule: "Mon-Fri: 8:00 AM – 5:48 PM",
           weekend: "Weekend: Closed",
-          email: "office@dolinvest.co.ao",
+          email: "office@dolinveste.co.ao",
           phone: "+244 914 052 955 / +244 949 500 505",
           social: "Find us on the following social networks:",
         },

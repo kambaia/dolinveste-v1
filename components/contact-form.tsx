@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { useTranslation } from "react-i18next"
 import { Mail, CheckCircle, AlertCircle } from "lucide-react"
 
+
 gsap.registerPlugin(ScrollTrigger)
 
 interface FormData {
@@ -80,36 +81,36 @@ export default function ContactForm() {
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    setSubmitStatus("idle")
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 2000))
+      const response = await fetch("api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-      // Simulate success/error randomly for demo
-      const success = Math.random() > 0.3
-
-      if (success) {
-        setSubmitStatus("success")
+      if (response.ok) {
+        setSubmitStatus("success");
         setFormData({
           fullName: "",
           email: "",
           subject: "",
           message: "",
-        })
+        });
       } else {
-        setSubmitStatus("error")
+        setSubmitStatus("error");
       }
     } catch (error) {
-      setSubmitStatus("error")
+      console.error("Erro:", error);
+      setSubmitStatus("error");
     } finally {
-      setIsSubmitting(false)
-      // Clear status after 5 seconds
-      setTimeout(() => setSubmitStatus("idle"), 5000)
+      setIsSubmitting(false);
+      setTimeout(() => setSubmitStatus("idle"), 5000);
     }
-  }
+  };
 
   return (
     <section className="py-20 bg-white">

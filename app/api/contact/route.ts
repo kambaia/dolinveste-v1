@@ -6,12 +6,12 @@ export async function POST(req: Request) {
 
     try {
         const transporter = nodemailer.createTransport({
-            host: "dolinveste.co.ao",
-            port: 465,
+            host: process.env.EMAIL_HOST,
+            port: parseInt(process.env.EMAIL_PORT || "587"),
             secure: true,
             auth: {
-                user: "office@dolinveste.co.ao",
-                pass: "GBV!d@2024#"
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS
             },
         })
 
